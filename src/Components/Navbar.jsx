@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom'
 import style from '../styles/Navbar.module.css'
 
 const Navbar = () => {
-    const token = "";
+    const isUser = JSON.parse(localStorage.getItem("CurrentUser")) || null;
     const logout = () => {
-
+        localStorage.removeItem("currentUser");
     }
     return (
         <div className={style.main}>
             <Link to={"/"}>Comments</Link>
-            {token ?
+            {isUser ?
                 <button onClick={() => logout()}>Logout</button>
                 :
                 <Link to={"/login"}>Login</Link>
             }
-            {token ?
+            {isUser ?
                 ""
                 :
                 <Link to={"/signup"}>Sign Up</Link>

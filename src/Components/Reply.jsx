@@ -11,6 +11,7 @@ const Reply = ({comment,id}) => {
                     <p>&#8226;</p>
                     <p>7 Hours</p>
                 </div>
+                
                 <textarea className={style.edit_section} disabled maxLength='200' value={'I Like Your Comment'} />
                 <div className={style.like_section}>
                     <p>2 &and;</p>

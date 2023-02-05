@@ -8,7 +8,7 @@ import Comment from './Comment';
 const getNewComment = (value, isRootNode = false, parentNodeId) => {
     return {
         id: new Date(),
-        senderName: "",
+        senderName: JSON.parse(localStorage.getItem('currentUser')).userId,
         recipientName: "",
         likes: 0,
         unlikes: 0,
@@ -107,7 +107,6 @@ const Comments = () => {
                 </div>
                 <div
                     style={{
-                        border: "1px solid blue",
                         width: "50%",
                         margin: "auto",
                         overflowX: "auto",

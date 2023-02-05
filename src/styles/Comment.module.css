@@ -3,7 +3,7 @@
     margin: auto;
     margin-block: 50px;
     height: 80vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 10px;
 }
 
@@ -15,7 +15,7 @@
     margin: auto;
     justify-content: start;
     align-items: flex-start;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .comment_main>img {
