@@ -1,0 +1,44 @@
+.main {
+    margin: auto;
+    width: 20%;
+    height: 50vh;
+    padding: 100px;
+}
+
+.signup_card {
+    margin-block: 50px;
+    padding-block: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.signup_card>div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 7px;
+}
+
+.signup_card>div>label {
+    font-weight: 600;
+}
+
+.signup_card>div>input {
+    padding: 7px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 7px;
+}
+
+.signup_card>div>button {
+    border-radius: 7px;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 14px;
+
+}
